@@ -1,0 +1,40 @@
+{
+  "name": "keijiban-clone",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "biome check",
+    "format": "biome format --write",
+    "typeorm": "typeorm-ts-node-commonjs",
+    "migration:generate": "typeorm-ts-node-commonjs migration:generate -d src/utils/data-source.ts",
+    "migration:run": "typeorm-ts-node-commonjs migration:run -d src/utils/data-source.ts"
+  },
+  "dependencies": {
+    "bcryptjs": "3.0.3",
+    "jose": "6.2.2",
+    "jsonwebtoken": "9.0.3",
+    "next": "16.2.1",
+    "pg": "8.20.0",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "reflect-metadata": "0.2.2",
+    "sqlite3": "5.1.7",
+    "typeorm": "0.3.28"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.2.0",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "20.19.37",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "babel-plugin-react-compiler": "1.0.0",
+    "cross-env": "7.0.3",
+    "tailwindcss": "^4",
+    "ts-node": "10.9.2",
+    "tsconfig-paths": "4.2.0",
+    "typescript": "5.9.3"
+  }
+}
